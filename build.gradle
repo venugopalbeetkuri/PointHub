@@ -1,0 +1,42 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+
+       // compile fileTree(dir: 'libs', include: ['*.jar'])
+        classpath 'com.android.tools.build:gradle:2.1.0'
+
+        // ...
+       // classpath 'com.github.triplet.gradle:play-publisher:1.1.4'
+
+        // compile 'com.journeyapps:zxing-android-embedded:3.0.2@aar'
+        // compile 'com.google.zxing:core:3.2.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+/*apply plugin: 'com.savillians.gradle.androidpublisher.AndroidPublisherPlugin'
+
+androidPublisher {
+    applicationName = "SmartPoints/1.0"
+    packageName = "PointHub"
+    serviceAccountEmail = "bizzmark.in@gmail.com"
+    serviceAccountKeyFile = file('MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiWcxk8nyhyxtDFV59aaNSqxxDiGbtHNCEG/iKRmo65uzvmpzC3BJnLvadiyxUTDrDv5IiLMkZRYLjguv5ZuJE1PX9WNXneErYFlkxGaVl134tTbGYE+ZPLs9Zq0mBUqGeyn/9LOrVtgGUp3+LznXdQWjmLbarZzZCQVcdidPQ9pS9WslKnWaAHUP3qXO2c2L0TrC9X2xWJh/19bPtB+aRvbOFhIHETZUStDN2tgTy4Rg+Plw6kW6J5IcWTZoIBDc2xYIWJ1OzxEWpHsP6AXlPTS/bDdufVP1yX9y5P0eEQ8gLbP6a3g6FPwnIe4blKEl6PGmWEJxDoXSQwji6I5HgwIDAQAB')
+    track = "alpha" // default, don't need to specify
+    variantName = "release" // default, don't need to specify
+}*/
